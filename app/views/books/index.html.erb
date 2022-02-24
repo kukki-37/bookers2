@@ -1,0 +1,15 @@
+<div class="container">
+  <%= render "layouts/error_message", message: @book %>
+  <div class='row'>
+      <div class='col-md-3'>
+        <%= render "users/userinfo", user: current_user %>
+        <%= render "books/newbook", book: @book %>
+      </div>
+
+      <div class='col-md-8 offset-md-1'>
+        <%= render "books/books_table", books: @books%>
+      </div>
+  </div>
+
+
+</div>
